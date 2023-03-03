@@ -2,6 +2,8 @@
 
 This git repository is dedicated to updating the description of the alliance page, and providing a central location for hosting the "true" version.
 
+You can preview the current main branch version of the description [here](https://cikmo.github.io/Alliance-Page/alliance_preview_page.html).
+
 ## Instructions
 
 To update the description, edit the file `description.html`.
