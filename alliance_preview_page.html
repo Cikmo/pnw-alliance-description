@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html
+    class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        The New Sanghelios (TNS) | Politics & War
+    </title>
+    <meta name="description" content="The New Sanghelios is an alliance in the online game Politics and War">
+    <meta name="keywords" content="The New Sanghelios, TNS, politics and war, politics & war, alliance" />
+    <meta name="Copyright" content="Copyright © 2013-2023 Yellowstone Digital Media LLC">
+    <meta http-equiv="reply-to" content="politicsandwaronline@gmail.com">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Yellowstone Digital Media LLC">
+    <meta property="og:title" content="The New Sanghelios (TNS) | Politics & War">
+    <meta property="og:image"
+        content="https://politicsandwar.com/uploads/d28226cb08d43a13c0f181a8ebaf4c628a6dba8b500x330112.png">
+    <meta property="og:description" content="The New Sanghelios is an alliance in the online game Politics and War">
+
+    <!-- Bootstrap -->
+    <link href="https://politicsandwar.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://politicsandwar.com/css/mobile-menu.min.css" rel="stylesheet">
+    <link href="https://politicsandwar.com/css/bootstrap-4.3.1-card.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" data-cfasync="false"></script>
+    <script src="https://politicsandwar.com/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"
+        type="text/javascript"></script>
+    <script src="https://politicsandwar.com/js/moment.js" type="text/javascript"></script>
+    <script src="https://politicsandwar.com/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--Modals, Tooltips, Popovers, Alert Dismissals-->
+
+    <link rel="stylesheet" href="https://politicsandwar.com/css/masterbootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://politicsandwar.com/includes/font-awesome/css/font-awesome.min.css">
+
+    <!--FontAwesome 5-->
+    <link href="/fontawesome5/css/all.min.css" rel="stylesheet">
+
+    <!--Plotly Graphing-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" type="text/javascript"></script>
+
+    <!--Bootstrap Collapse-->
+    <script src="https://politicsandwar.com/js/bootstrap.collapse.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var base_url = 'https://politicsandwar.com/';
+    </script>
+
+    <!--Load Custom Alliance Description-->
+    <script>
+        $(function () {
+            $("#loaded_alliance_description").load("description.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <style type="text/css">
+        .popup_lang_widget {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .popup_lang_widget a {
+            height: 24px;
+        }
+    </style>
+
+    <div id="bg-map">
+    </div>
+    <!-- Info for Apps -->
+    <div style='display:none;'><span id='app_logged_in'>true</span><span id='app_user_id'>239259</span><span
+            id='app_leader_name'>Christian III</span><span id='app_nation_name'>Norlandia</span><span
+            id='app_ios'>false</span><span id='app_android'>false</span></div>
+
+    <!--Mobile Header-->
+    <div class="container white-bg">
+        <div class="row logo" id="header" id="logo">
+            <!--Main Header-->
+            <a href="https://politicsandwar.com/index.php"><img src="https://politicsandwar.com//img/logo.png"
+                    alt="Politics & War Logo" class="img-responsive center-block"></a>
+        </div>
+    </div>
+
+    <span id="topPage"></span>
+
+    <div class="row mobileLinkBar visible-xs visible-sm" id="mobileLinkBarID">
+
+        <!--Logged In-->
+
+
+        <div class="col-xs-3">
+            <a href="/nation/notifications/" class="mobileLinkBarButton" id="mobileLinkBarButton">
+                <i class="ntf-icon-counter fas fa-bell" aria-hidden="true"></i>
+                <span class="mobileMenuSmallText">Notifications</span>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="/nation/id=239259" class="mobileLinkBarButton" id="mobileLinkBarButton">
+                <i class="fas fa-flag-alt" aria-hidden="true"></i><br />
+                <span class="mobileMenuSmallText">Nation</span>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="mobileLinkBarButton" id="mobileLinkBarButton" data-toggle="modal"
+                data-target="#resource-column">
+                <i class="fas fa-boxes-alt" aria-hidden="true"></i><br />
+                <span class="mobileMenuSmallText">Resources</span>
+            </a>
+        </div>
+        <!-- Slot 4 / Not Changeable-->
+        <div class="col-xs-3">
+            <a href="#" class="mobileLinkBarButton" id="mobileMenuButton">
+                <i class="fas fa-bars"></i><br />
+                <span class="mobileMenuSmallText">Menu</span>
+            </a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $("#mobileMenuButton").click(function () {
+            $("#leftcolumn").slideToggle();
+            $("#rightcolumn").slideToggle();
+
+            $("html, body").animate({
+                scrollTop: $('#topPage').offset().top - 10
+            }, 200); //go to menu
+        });
+
+        $("#resourceMenuButton").click(function () {
+            $("#resource-column").slideToggle();
+
+            $("html, body").animate({
+                scrollTop: $('#topPage').offset().top - 10
+            }, 200); //go to menu
+        });
+
+        var max_scroll = $("#header").height();
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                var navbar = $("#mobileLinkBarID");
+
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop > max_scroll && !navbar.is(".mobileLinkBar-fixed")) {
+                    //console.log("go floated");
+                    navbar.addClass("mobileLinkBar-fixed");
+                    $("#header").css("margin-bottom", navbar.height());
+                    $("#mobileMenu").css("margin-top", navbar.height());
+                }
+                if (scrollTop <= max_scroll && navbar.is(".mobileLinkBar-fixed")) {
+                    //console.log("return to normal");
+                    navbar.removeClass("mobileLinkBar-fixed");
+                    $("#header").css("margin-bottom", 0);
+                    $("#mobileMenu").css("margin-top", 0);
+                }
+
+            });
+        });
+    </script>
+
+    <div class="container">
+        <div class="row" style="padding-top:10px;">
+
+            <div id="leftcolumn" class="col-md-2">
+                <ul class="sidebar">
+                    <span style="font-weight:bold; font-size: 18px;">Account</span>
+                    <a href="https://politicsandwar.com/">
+                        <li>Home</li>
+                    </a>
+                    <a href="https://politicsandwar.com/inbox/">
+                        <li>Messages <span class="msg_new_counter"></span></li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/notifications/">
+                        <li>Notifications <span class="ntf_new_counter"></span></li>
+                    </a>
+                    <a href="https://politicsandwar.com/account/">
+                        <li>Account</li>
+                    </a>
+                    <a href="https://politicsandwar.com/account/referrals/">
+                        <li>Referrals</li>
+                    </a>
+                    <a href="https://politicsandwar.com/changelog/" class="notranslate">
+                        <li>Changelog <span style='color: #FF0000; font-style:italic;'>New!</span></li>
+                    </a>
+                    <a href="https://politicsandwar.com/donate/">
+                        <li>Donate</li>
+                    </a>
+
+                    <a href="https://politicsandwar.com/nation/objectives/">
+                        <li>Objectives </li>
+                    </a>
+                    <a href="https://politicsandwar.com/pwpedia/" class="notranslate">
+                        <li>PWPedia</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/dossier/">
+                        <li>Dossier</li>
+                    </a>
+                    <a href="https://politicsandwar.com/logout/">
+                        <li>Logout</li>
+                    </a>
+                </ul>
+                <ul class="sidebar">
+                    <span style="font-weight:bold; font-size: 18px;">Nation</span>
+                    <a href="https://politicsandwar.com/nation/id=239259">
+                        <li>View</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/edit/">
+                        <li>Edit</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/policy/">
+                        <li>Policies</li>
+                    </a>
+                    <a href="https://politicsandwar.com/cities/">
+                        <li>Cities</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/projects/">
+                        <li>Projects</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/revenue/">
+                        <li>Revenue</li>
+                    </a>
+                    <a href="https://politicsandwar.com/index.php?id=26&display=world">
+                        <li>Trade
+                            <span class="trd_new_counter"></span>
+                        </li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/military/">
+                        <li>Military</li>
+                    </a>
+                    <a href="https://politicsandwar.com/nation/war/">
+                        <li>Wars</li>
+                    </a>
+                    <a href='https://politicsandwar.com/alliance/id=10075'>
+                        <li>Alliance</li>
+                    </a><a
+                        href="https://politicsandwar.com/index.php?id=15&keyword=The New Sanghelios&cat=alliance&ob=score&od=DESC&maximum=15&minimum=0&search=Go&memberview=true"><span
+                            style="padding-left: 20px; display:block;">Members</span></a><a
+                        href="https://politicsandwar.com/alliance/manage/id=10075"><span
+                            style="padding-left: 20px; display:block;">Management Lists</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=trade"><span
+                            style="padding-left: 20px; display:block;">Market Sharing</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=announcements"><span
+                            style="padding-left: 20px; display:block;">Announcements</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=acp" alt="Alliance Control Panel"
+                        title="Alliance Control Panel"><span style="padding-left:20px;display:block;">Control
+                            Panel</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=alliance_positions"
+                        alt="Alliance Positions Manager" title="Alliance Positions Manager"><span
+                            style="padding-left:20px;display:block;">Position Manager</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=map"><span
+                            style="padding-left: 20px; display:block;">Map</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=embargoes" alt="Embargoes"
+                        title="Embargoes"><span style="padding-left:20px;display:block;">Embargoes</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=war"><span
+                            style="padding-left: 20px; display:block;">Wars</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=bank"><span
+                            style="padding-left: 20px; display:block;">Bank</span></a><a
+                        href="https://politicsandwar.com/alliance/id=10075&display=taxes#result" alt="Alliance Taxes"
+                        title="Alliance Taxes"><span style="padding-left:20px;display:block;">Taxes</span></a><a
+                        href="https://politicsandwar.com/alliance/leave/id=10075"><span
+                            style="padding-left: 20px; display:block;">Leave</span></a> <a
+                        href="https://politicsandwar.com/obl/team/id=65782">
+                        <li>Baseball</li>
+                    </a>
+                    <a href="https://politicsandwar.com/rewarded-ads/">
+                        <li>Rewarded Ads</li>
+                    </a>
+                </ul>
+                <ul class="sidebar">
+                    <span style="font-weight:bold; font-size: 18px;">World</span>
+                    <a href="https://politicsandwar.com/nations/">
+                        <li>Nations</li>
+                    </a>
+                    <a href="https://politicsandwar.com/alliances/">
+                        <li>Alliances</li>
+                    </a>
+                    <a href="https://politicsandwar.com/bulletins/">
+                        <li>World News</li>
+                    </a>
+                    <a href="https://politicsandwar.com/leaderboards/">
+                        <li>Leaderboards</li>
+                    </a>
+                    <a href="https://politicsandwar.com/alliances/treatyweb/">
+                        <li>Treaty Web</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world/conflicts/">
+                        <li>Conflicts</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world/bounties/">
+                        <li>Bounties</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world/embargoes/">
+                        <li>Embargoes</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world/radiation/">
+                        <li>Radiation</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world/advertisements/">
+                        <li>Advertisements</li>
+                    </a>
+                    <a href="https://politicsandwar.com/world-graphs/">
+                        <li>Data Visualization</li>
+                    </a>
+                    <a href="https://politicsandwar.com/worldmap/">
+                        <li>World Map</li>
+                    </a>
+                </ul>
+                <ul class="sidebar">
+                    <span style="font-weight:bold; font-size: 18px;">Community</span>
+                    <a href="https://forum.politicsandwar.com/" target="_blank">
+                        <li>Forum</li>
+                    </a>
+                    <a href="https://discord.gg/H9XnGxc" target="_blank" class="notranslate">
+                        <li>Discord</li>
+                    </a>
+                    <!--<a href="https://pwdepot.net" target="_blank"><li>Politics & Store</li></a>-->
+                    <!--<a href="https://politicsandwar.com/irc/"><li>IRC Channel</li></a>-->
+                    <a href="https://politicsandwar.com/tools/">
+                        <li>Helpful Tools</li>
+                    </a>
+                    <a href="https://politicsandwar.fandom.com/wiki/Politics_and_War_Wiki" target="_blank"
+                        class="notranslate">
+                        <li>Wiki</li>
+                    </a>
+                    <a href="https://reddit.com/r/politicsandwar" target="_blank" class="notranslate">
+                        <li>Reddit</li>
+                    </a>
+                </ul>
+                <div class="sidebar" style="padding-left: 20px;">
+                    <span class="bold" style="font-size: 18px;" class="notranslate">Orbis Date</span>
+                    <br />
+                    September 23, 2085<img src='https://politicsandwar.com/img/icons/16/weather_rain.png'
+                        data-toggle='tooltip' title='Spring: Normal food production'
+                        alt='Spring: Normal food production'> <br /><br />
+                    <span class="bold" style="font-size: 18px;" class="notranslate">Server Time</span>
+                    <br />March 3 07:21 pm <br />Next turn in <b>0:39</b>
+                    <br /><br />
+                    <span class="bold" style="font-size: 18px;" class="notranslate">Local Time</span>
+                    <br />March 3 07:21 pm <br /><br />
+                    <span class="bold" style="font-size: 18px;" class="notranslate">Players Online Now</span>
+                    <br />177
+                </div>
+            </div>
+            <div id="rightcolumn" class="col-md-10">
+                <div class="hidden-xs alert alert-info" style="min-height: 150px;">
+                    <p class="bold">Player Advertisement by
+                        <a href="https://politicsandwar.com/nation/id=340153" target="_blank" class="notranslate">Noah
+                            II</a>
+                        <button title="Upvote" type="button" class="btn-ad-vote btn-default" data-vote="up"
+                            style="margin-left: 5px"><i class="fa fa-arrow-up"></i><i> Upvote</i></button>
+                    </p>
+                    <p title='Views: 548,327'><a href='/index.php?id=160&ad_id=3120'><img
+                                src='https://politicsandwar.com/uploads/369a2eb93d7d452014492eaf5ff239c6eb5a0dc6x101.gif'
+                                class='img-responsive' style='max-height:100px;'></a></p>
+                </div>
+                <div class="visible-xs">
+                    <p class="bold smallText">Player Advertisement by
+                        <a href="https://politicsandwar.com/nation/id=340153" target="_blank" class="notranslate">Noah
+                            II</a>
+                        <button title="Upvote" type="button" class="btn-ad-vote btn-default" data-vote="up"
+                            style="margin-left: 5px"><i class="fa fa-arrow-up"></i><i> Upvote</i></button>
+                    </p>
+                    <p class='center'><a href='/index.php?id=160&ad_id=3120'><img
+                                src='https://politicsandwar.com/uploads/369a2eb93d7d452014492eaf5ff239c6eb5a0dc6x101.gif'
+                                class='img-responsive' style='max-height:100px;'></a></p>
+                </div>
+                <div class="columnheader">View Alliance</div>
+                <style>
+                    .ck-editor__editable {
+                        min-height: 200px;
+                    }
+                </style>
+                <style>
+                    #flagcontainer {
+                        position: relative;
+                    }
+
+                    #flagcontainer #topimg {
+                        display: none;
+                    }
+                </style>
+
+
+                <!-- regular view -->
+                <div class="hidden-xs">
+                    <table class="noborder" style="width:100%">
+
+                        <tr>
+                            <td colspan="2">
+                                <div class="row notranslate">
+                                    <div class="col-md-4">
+                                        <div id="flagcontainer">
+                                            <a href="/alliance/id=10075">
+                                                <img src="https://politicsandwar.com/img/flags/nukeoverlay.png"
+                                                    alt="Been Nuked" style="max-width:250px; max-height:150px;"
+                                                    class="img-responsive center-block" id="topimg">
+                                                <img src="https://politicsandwar.com/uploads/d28226cb08d43a13c0f181a8ebaf4c628a6dba8b500x330112.png"
+                                                    alt="Flag" data-toggle="tooltip" title="Flag"
+                                                    class="img-responsive center-block"
+                                                    style="max-width:250px; max-height:150px;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 center">
+                                        <h1>The New Sanghelios</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <hr />
+                                        <style>
+                                            .zzz>div {
+                                                z-index: 1;
+                                            }
+                                        </style>
+                                        <div class="zzz notranslate">
+                                            <div style='width:100%' class='ck-content'>
+                                                <div id="loaded_alliance_description"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left;" colspan="2">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="https://politicsandwar.com/alliance/edit/id=10075" title="Edit Alliance"
+                                        class="btn-default btn">
+                                        <img src="https://politicsandwar.com/img/icons/16/page_edit.png"> Edit Alliance
+                                    </a>
+                                    <a href="https://politicsandwar.com/alliance/id=10075&display=acp"
+                                        title="Control Panel" class="btn-default btn">
+                                        <img src="https://politicsandwar.com/img/icons/16/control_panel_access.png">
+                                        Control Panel
+                                    </a>
+                                    <a href="https://politicsandwar.com/alliance/id=10075" title="Alliance Page"
+                                        class="btn-default btn"><img
+                                            src="https://politicsandwar.com/img/icons/16/home_page.png"> Information</a>
+                                    <a class="btn-default btn"
+                                        href="https://politicsandwar.com/index.php?id=15&keyword=The+New+Sanghelios&cat=alliance&ob=score&od=DESC&maximum=15&minimum=0&search=Go&memberview=true"><img
+                                            src="https://politicsandwar.com/img/icons/16/application_view_list.png"
+                                            title="View Members"> Members</a>
+                                    <a class="btn-default btn"
+                                        href="https://politicsandwar.com/alliance/id=10075&display=trade"><img
+                                            src="https://politicsandwar.com/img/icons/16/trade.png"
+                                            title="Market Sharing"> Market Sharing</a>
+                                </div>
+                                <div class="btn-group btn-group-justified" style="margin-top: 10px;">
+                                    <a class="btn-default btn"
+                                        href="https://politicsandwar.com/alliance/id=10075&display=announcements"
+                                        title="Alliance Announcements"><img
+                                            src="https://politicsandwar.com/img/icons/16/text_large_cap.png">
+                                        Announcements</a> <a class="btn-default btn"
+                                        href="https://politicsandwar.com/alliance/id=10075&display=map"
+                                        title="Alliance Map"><img src="https://politicsandwar.com/img/icons/16/map.png">
+                                        Map</a>
+                                    <a class="btn-default btn"
+                                        href="https://politicsandwar.com/alliance/id=10075&display=embargoes"
+                                        title="Embargoes"><img
+                                            src="https://politicsandwar.com/img/icons/16/money_delete.png">
+                                        Embargoes</a> <a href="https://politicsandwar.com/alliance/id=10075&display=war"
+                                        title="Show Wars" class="btn-default btn"><img
+                                            src="https://politicsandwar.com/img/icons/16/shield.png"> Wars</a>
+                                    <a class="btn-default btn"
+                                        href="https://politicsandwar.com/alliance/id=10075&display=bank"
+                                        title="View Bank"><img
+                                            src="https://politicsandwar.com/img/icons/16/money_bag.png"> Bank</a> <a
+                                        href="https://politicsandwar.com/alliance/leave/id=10075" title="Leave Alliance"
+                                        class="btn-default btn"><img
+                                            src="https://politicsandwar.com/img/icons/16/world_delete.png"> Leave</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobile view -->
+
+                <div class="visible-xs">
+                    <table class="noborder" style="width:100%;">
+                        <tr>
+                            <td class="center bold">The New Sanghelios</td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <p class="center"><img
+                                        src="https://politicsandwar.com/uploads/d28226cb08d43a13c0f181a8ebaf4c628a6dba8b500x330112.png"
+                                        alt="Flag" data-toggle="tooltip" title="Flag" class="img-responsive"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <!-- mobile buttons -->
+                                    <div class="col-xs-6">
+                                        <div class="btn-group btn-group-vertical">
+                                            <a href="https://politicsandwar.com/alliance/id=10075" title="Alliance Page"
+                                                class="btn-default btn"><img
+                                                    src="https://politicsandwar.com/img/icons/16/home_page.png">
+                                                Information</a>
+                                            <a class="btn-default btn"
+                                                href="https://politicsandwar.com/index.php?id=15&keyword=The+New+Sanghelios&cat=alliance&ob=score&od=DESC&maximum=15&minimum=0&search=Go&memberview=true"><img
+                                                    src="https://politicsandwar.com/img/icons/16/application_view_list.png"
+                                                    title="View Members"> Members</a>
+                                            <a class="btn-default btn"
+                                                href="https://politicsandwar.com/alliance/id=10075&display=announcements"
+                                                title="Alliance Announcements"><img
+                                                    src="https://politicsandwar.com/img/icons/16/text_large_cap.png">
+                                                Announcements</a> <a
+                                                href="https://politicsandwar.com/alliance/id=10075&display=war"
+                                                title="Show Wars" class="btn-default btn"><img
+                                                    src="https://politicsandwar.com/img/icons/16/shield.png"> Wars</a>
+                                            <a href="https://politicsandwar.com/alliance/leave/id=10075"
+                                                title="Leave Alliance" class="btn-default btn"><img
+                                                    src="https://politicsandwar.com/img/icons/16/world_delete.png">
+                                                Leave</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="btn-group btn-group-vertical">
+                                            <a href="https://politicsandwar.com/alliance/edit/id=10075"
+                                                title="Edit Alliance" class="btn-default btn">
+                                                <img src="https://politicsandwar.com/img/icons/16/page_edit.png"> Edit
+                                                Alliance
+                                            </a>
+                                            <a href="https://politicsandwar.com/alliance/id=10075&display=acp"
+                                                title="Control Panel" class="btn-default btn">
+                                                <img
+                                                    src="https://politicsandwar.com/img/icons/16/control_panel_access.png">
+                                                Control Panel
+                                            </a>
+                                            <a class="btn-default btn"
+                                                href="https://politicsandwar.com/alliance/id=10075&display=trade"><img
+                                                    src="https://politicsandwar.com/img/icons/16/trade.png"
+                                                    title="Market Sharing"> Market Sharing</a>
+                                            <a class="btn-default btn"
+                                                href="https://politicsandwar.com/alliance/id=10075&display=map"
+                                                title="Alliance Map"><img
+                                                    src="https://politicsandwar.com/img/icons/16/map.png"> Map</a>
+                                            <a class="btn-default btn"
+                                                href="https://politicsandwar.com/alliance/id=10075&display=bank"
+                                                title="View Bank"><img
+                                                    src="https://politicsandwar.com/img/icons/16/money_bag.png">
+                                                Bank</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- end mobile buttons -->
+                        <tr>
+                            <td style="text-align:justify;">
+                                <div style='width:100%' class='ck-content'>
+                                    <div class="ck-content carousel-caption card-img-overlay input-icon"
+                                        style="background-color:#21437a;font-family:Verdana;text-align:center;font-weight:bold;color:#fff;width:100%;background-image:url(&quot;https://media.discordapp.net/attachments/992527169173594122/994573786445783080/unknown.png&quot;);background-position:center;padding-right:30px;padding-left:30px;min-width:270px;">
+                                        <div class="row" style="color:#fff;"> <img class="img-responsive"
+                                                src="https://cdn.discordapp.com/attachments/672310912090243092/918313227547467786/e1.png"
+                                                alt="e1.png">
+                                            <div class="row" style="color:#fff;">
+                                                <div class="col-sm-12">
+                                                    <div style="background-color:rgba(0,0,0,0);" class="img-rounded">
+                                                        <div style="padding:5px;max-width:700px;margin:0 auto;">
+                                                            <p style="text-align:center;"> <span
+                                                                    style="color:#ffffff;"><strong> While sailing
+                                                                        through the skies, dreaming of the future
+                                                                        bright, the Divine Phoenix was having the time
+                                                                        of its life. But suddenly the dreams of the
+                                                                        Phoenix turned into nightmares which the Divine
+                                                                        Phoenix couldn't control. Flying controlless in
+                                                                        the dark skies it soon dumbled into the grounds
+                                                                        of Cataclysmic waste. Laying lifeless on the
+                                                                        ground, soon the power of Cataclysm took over
+                                                                        the corpse.</strong></span> </p>
+                                                            <p style="text-align:center;"> <span style="color:#ffffff;">
+                                                                    <strong> But deep inside the remains of the Divine
+                                                                        Phoenix was life, life of the old Sanghelios,
+                                                                        who we're preparing to take over what's left to
+                                                                        take. Soon after the crueling war in the mist of
+                                                                        the Cataclysmic aura, The New Sanghelios
+                                                                        sprouted. Breaking away from the Cataclysm
+                                                                        power, finding shelter under the strong
+                                                                        shoulders of Carthago, a new power was born, The
+                                                                        New Sanghelios was born. </strong> </span> </p>
+                                                            <p style="text-align:center;"> <span style="color:#ffffff;">
+                                                                    <strong> Watching back to the tales of the Divine
+                                                                        Phoenix and kind people of the Cataclysm, we
+                                                                        decided to go, go the different way and fight to
+                                                                        the top ourselves, wishing to get the old
+                                                                        Sanghelios back. </strong> </span> </p>
+                                                            <p style="text-align:center;"> <span style="color:#ffffff;">
+                                                                    <strong> Discord is mandatory in our alliance. All
+                                                                        applications are done through our discord
+                                                                        server. </strong> </span> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12"> <a
+                                                        style="font-weight:bold;color:#333;background-color:#1199ee;border:4px solid #1199ee;"
+                                                        href="https://discord.gg/xFtrmbyDnM"
+                                                        class="button btn btn-outline-primary"> <img style="width:16px;"
+                                                            src="https://cdn.discordapp.com/attachments/672310912090243092/915025334901047346/Discord-Logo-Icon.png"
+                                                            alt="Discord-Logo-Icon.png"> Discord Server </a> </div>
+                                            </div> <img
+                                                src="https://cdn.discordapp.com/attachments/672310912090243092/918313228260474940/e2.png"
+                                                class="img-responsive" alt="e2.png">
+                                            <div class="row" style="color:#fff;">
+                                                <div class="col-sm-12" style="float:none;margin:0 auto;">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;color:#ffffff;padding-top:5px;">
+                                                            <strong>Leadership</strong>
+                                                        </h3>
+                                                        <p style="text-align:center;color:#ffffff;padding-bottom:5px;">
+                                                            <a style="color:#00ccff;"
+                                                                href="https://politicsandwar.com/nation/id=239259"><strong>Christian
+                                                                    III</strong></a> • <a style="color:#00ccff;"
+                                                                href="https://politicsandwar.com/nation/id=315015"><strong>SeedHunter</strong></a>
+                                                            • <a style="color:#00ccff;"
+                                                                href="https://politicsandwar.com/nation/id=216220"><strong>yungtechnio</strong></a>
+                                                            <br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;padding-top:5px;"> <span
+                                                                style="color:#ffffff;"><strong>Foreign
+                                                                    Affairs</strong></span> </h3>
+                                                        <p style="text-align:center;padding-bottom:5px;"> <strong> <span
+                                                                    style="color:#ffffff;">Head:</span> <span
+                                                                    style="color:#00ccff;"><a style="color:#00ccff;"
+                                                                        href="https://politicsandwar.com/nation/id=315015">SeedHunter</a><br></span>
+                                                            </strong> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;padding-top:5px;"> <span
+                                                                style="color:#ffffff;"><strong>Military
+                                                                    Command</strong></span> </h3>
+                                                        <p style="text-align:center;padding-bottom:5px;"> <span
+                                                                style="color:#ffffff;"> <strong> Head: <span
+                                                                        style="color:#00ccff;"><a style="color:#00ccff;"
+                                                                            href="https://politicsandwar.com/nation/id=343758">Jesse
+                                                                            McKid</a><br></span> </strong> </span> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;padding-top:5px;"> <span
+                                                                style="color:#ffffff;"><strong>Technology</strong></span>
+                                                        </h3>
+                                                        <p style="text-align:center;padding-bottom:5px;"> <strong> <span
+                                                                    style="color:#ffffff;"> Blah: <span
+                                                                        style="color:#ffffff;"> <span
+                                                                            style="color:#00ccff;"><a
+                                                                                style="color:#00ccff;"
+                                                                                href="https://politicsandwar.com/nation/id=239259">Christian
+                                                                                III</a></span> </span> </span> <span
+                                                                    style="color:#00ccff;"><br></span> </strong> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;padding-top:5px;"> <span
+                                                                style="color:#ffffff;"><strong>Internal
+                                                                    Affairs</strong></span> </h3>
+                                                        <p style="text-align:center;padding-bottom:5px;"> <strong> <span
+                                                                    style="color:#ffffff;"> Head: <span
+                                                                        style="color:#00ccff;"><a style="color:#00ccff;"
+                                                                            href="https://politicsandwar.com/nation/id=315015"><strong>SeedHunter</strong></a>
+                                                                        • <a style="color:#00ccff;"
+                                                                            href="https://politicsandwar.com/nation/id=216220"><strong>yungtechnio</strong></a><br></span>
+                                                                </span></strong> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="color:#fff;">
+                                                <div class="col-sm-6" style="float:none;margin:0 auto;">
+                                                    <div style="background-color:rgba(0,0,0,0.4);" class="img-rounded">
+                                                        <h3 style="text-align:center;padding-top:5px;"> <span
+                                                                style="color:#ffffff;"><strong>Economics</strong></span>
+                                                        </h3>
+                                                        <p style="text-align:center;padding-bottom:5px;"> <strong> <span
+                                                                    style="color:#ffffff;"> Head: <span
+                                                                        style="color:#ffffff;"> <a
+                                                                            style="color:#00ccff;"
+                                                                            href="https://politicsandwar.com/nation/id=239259"><strong>Christian
+                                                                                III</strong></a> • <a
+                                                                            style="color:#00ccff;"
+                                                                            href="https://politicsandwar.com/nation/id=319511"><strong>Gol
+                                                                                D Roger</strong></a> </span> </span>
+                                                                <span style="color:#00ccff;"><br></span> </strong> <span
+                                                                style="background-color:#000000;"></span> </p>
+                                                    </div>
+                                                </div>
+                                            </div> <img
+                                                src="https://cdn.discordapp.com/attachments/672310912090243092/918313228050763806/e3.png"
+                                                class="img-responsive" alt="e3.png">
+                                            <div class="row" style="color:#fff;">
+                                                <div class="col-sm-6" style="margin-bottom:15px;">
+                                                    <div style="background-color:rgba(0,0,0,0.4);min-height:100px;"
+                                                        class="img-rounded">
+                                                        <p style="text-align:center;"> <strong> <span
+                                                                    style="color:#ffffff;">━━━━━━━━━━━━━━━━━━━━<br></span>
+                                                            </strong> </p>
+                                                        <p style="text-align:center;"> <strong> <strong> <span
+                                                                        style="color:#ffffff;"> Protected by: <span
+                                                                            style="color:#1199ee;"> <a
+                                                                                style="color:#1199ee;"
+                                                                                href="https://politicsandwar.com/alliance/id=5049">
+                                                                                <br> Carthago </a> <br></span> </span>
+                                                                </strong> </strong> </p>
+                                                        <p style="text-align:center;"> <strong> <span
+                                                                    style="color:#ffffff;">━━━━━━━━━━━━━━━━━━━━</span><br></strong>
+                                                        </p> <strong><strong> </strong></strong>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div style="background-color:rgba(0,0,0,0.4);min-height:115px;"
+                                                        class="img-rounded">
+                                                        <p style="text-align:center;margin:0;"> <strong> <span
+                                                                    style="color:#ffffff;">━━━━━━━━━━━━━━━━━━━━</span><br></strong>
+                                                        </p>
+                                                        <p
+                                                            style="max-width:200px;text-align:center;margin:0 auto;padding:5px;">
+                                                            <span style="color:#ffffff;"><strong>We will counter any
+                                                                    attacks on members and applicants regardless of
+                                                                    their apparent activity.</strong></span>
+                                                        </p>
+                                                        <p style="text-align:center;margin:0;"> <strong> <span
+                                                                    style="color:#ffffff;">━━━━━━━━━━━━━━━━━━━━</span><br></strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <br>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+
+                        <table class="nationtable" style="float:left;">
+                            <tr>
+                                <th colspan="2">Basic Information</th>
+                            </tr>
+                            <tr>
+                                <td width="45%">Alliance Name:</td>
+                                <td class="notranslate">
+                                    The New Sanghelios (TNS) </td>
+                            </tr>
+
+                            <tr>
+                                <td width="45%">Leader:</td>
+                                <td class="notranslate">
+                                    <a href='https://politicsandwar.com/nation/id=216220' data-toggle='tooltip'
+                                        title='freeland republic'>yungtechnio <img
+                                            src='https://politicsandwar.com/uploads/9a2a8a6edba298a6c35a18288da0a3c3ee313b58x765.png'
+                                            class='tinyflag'></a>, <a href='https://politicsandwar.com/nation/id=239259'
+                                        data-toggle='tooltip' title='Norlandia'>Christian III <img
+                                            src='https://politicsandwar.com/uploads/aef1714c352a95d7a6e69e54982d38138bda22e31000x562530.jpg'
+                                            class='tinyflag'></a>, <a href='https://politicsandwar.com/nation/id=315015'
+                                        data-toggle='tooltip' title='Seedya'>SeedHunter <img
+                                            src='https://politicsandwar.com/uploads/fcc534b2722d3a7fef1f261204fdb64cdee4593bx781.jpg'
+                                            class='tinyflag'></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="45%">Heir:</td>
+                                <td class="notranslate">
+                                    <a href='https://politicsandwar.com/nation/id=319511' data-toggle='tooltip'
+                                        title='Raftel'>Gol D Roger <img
+                                            src='https://politicsandwar.com/uploads/42ecfe4ea257bd6e2fcefa79f68fa850f174f4bb1000x714642.jpg'
+                                            class='tinyflag'></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="45%">High Government :</td>
+                                <td class="notranslate">
+                                    <a href='https://politicsandwar.com/nation/id=343758' data-toggle='tooltip'
+                                        title='Empire of Cascadia'>Jesse McKid <img
+                                            src='https://politicsandwar.com/uploads/92cb189f994353f7d7bf9caa051e1e7ae82ac6b01000x666948.jpeg'
+                                            class='tinyflag'></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="45%">Officer:</td>
+                                <td class="notranslate">
+                                    <a href='https://politicsandwar.com/nation/id=283362' data-toggle='tooltip'
+                                        title='Infinisperim'>Rowan Stersin <img
+                                            src='https://politicsandwar.com/uploads/d8363362e92c86e0504e5029178cad6f313c82a3x784.png'
+                                            class='tinyflag'></a>, <a href='https://politicsandwar.com/nation/id=517192'
+                                        data-toggle='tooltip' title='Menland'>sandman <img
+                                            src='https://politicsandwar.com/uploads/b30cb1ee52efdf528c9992725c88235db0c4713a1000x666789.png'
+                                            class='tinyflag'></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Founded:</td>
+                                <td>06/16/2022 (260 Days Old)</td>
+                            </tr>
+                            <tr>
+                                <td>Color Trade Bloc:</td>
+                                <td class="notranslate"><a
+                                        href="https://politicsandwar.com/index.php?id=15&keyword=olive&cat=color&ob=score&od=DESC&maximum=15&minimum=0&search=Go"><img
+                                            src="https://politicsandwar.com/img/colors/olive.png" data-toggle="tooltip"
+                                            title="Olive"> Olive Paradise</a></td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>Members:</td>
+                                <td>26 <a
+                                        href="https://politicsandwar.com/index.php?id=15&keyword=The+New+Sanghelios&cat=alliance&ob=score&od=DESC&maximum=15&minimum=0&search=Go&memberview=true"><img
+                                            src="https://politicsandwar.com/img/icons/16/application_view_list.png"
+                                            data-toggle="tooltip" title="View Members"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Alliance Rank:</td>
+                                <td>#64 of 737 (8.68%)</td>
+                            </tr>
+                            <tr>
+                                <td>Score:</td>
+                                <td>55,156.95</td>
+                            </tr>
+                            <tr>
+                                <td>Avg Score:</td>
+                                <td>2,121.42</td>
+                            </tr>
+                            <tr>
+                                <td class="notranslate">Discord Server:</td>
+                                <td><a target="_blank" href="https://discord.gg/bGZ4mM9Pc9" data-toggle="tooltip"
+                                        title="Warning! This link was not supplied by us and may be unsafe.">Click
+                                        Here</a></td>
+                            </tr>
+                            <tr>
+                                <td>Accepting Members:</td>
+                                <td>Yes!</td>
+                            <tr>
+                                <th colspan="2">Statistics</th>
+                            </tr>
+                            <tr>
+                                <td>Vacation Mode Members:</td>
+                                <td>3 (10.34%)
+                            <tr>
+                                <td>Beige Nations:</td>
+                                <td>0 (0%)
+                            <tr>
+                                <td>Gray Nations:</td>
+                                <td>0 (0%)
+                            <tr>
+                                <td>Alliance Treasures:</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Alliance Treasure Bonus: <a
+                                        href="https://politicsandwar.com/pwpedia/article/alliance-treasure-bonus"
+                                        target="_blank"><img src="https://politicsandwar.com/img/icons/16/help.png"
+                                            alt="Help" data-toggle="tooltip" title="More Information"></a></td>
+                                <td>0.00%</td>
+                            </tr>
+                            <tr>
+                                <td>Total Cities:</td>
+                                <td>376</td>
+                            </tr>
+                            <tr>
+                                <td>Total Infrastructure:</td>
+                                <td>749,648.68</td>
+                            </tr>
+                            <tr>
+                                <td>Total Land:</td>
+                                <td>791,380.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total Population:</td>
+                                <td>94,041,585</td>
+                            </tr>
+                            <tr>
+                                <td>Total GDP:</td>
+                                <td>$109,432,916,942</td>
+                            </tr>
+                            <tr>
+                                <td>Total Soldiers:</td>
+                                <td>429,356</td>
+                            </tr>
+                            <tr>
+                                <td>Total Tanks:</td>
+                                <td>146,883</td>
+                            </tr>
+                            <tr>
+                                <td>Total Aircraft:</td>
+                                <td>22,092</td>
+                            </tr>
+                            <tr>
+                                <td>Total Ships:</td>
+                                <td>1,470</td>
+                            </tr>
+                            <tr>
+                                <td>Total Spies:</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Total Missiles:</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Total Nuclear Weapons:</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Wars Won:</td>
+                                <td>1,722</td>
+                            </tr>
+                            <tr>
+                                <td>Wars Lost:</td>
+                                <td>364</td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">Applicants</th>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=240216'
+                                        data-toggle='tooltip' title='Ijatai'>Ponia Molafe</a></td>
+                                <td>1,255.20</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=360124'
+                                        data-toggle='tooltip' title='Land of Hindustan'>Bk_Patel_17</a></td>
+                                <td>267.22</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=394955'
+                                        data-toggle='tooltip' title='Yuksosis'>Yuks Me Now</a></td>
+                                <td>255.79</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=415758'
+                                        data-toggle='tooltip' title='School Sucks Nation'>Senior School Hater</a></td>
+                                <td>995.54</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=453627'
+                                        data-toggle='tooltip' title='Vlast'>Aleksandur Karakach</a></td>
+                                <td>244.37</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=461480'
+                                        data-toggle='tooltip' title='Spain'>Pedro Sanchez</a></td>
+                                <td>231.60</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=476685'
+                                        data-toggle='tooltip' title='Zephyrton'>Zephyr11</a></td>
+                                <td>251.91</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=485761'
+                                        data-toggle='tooltip' title='pralse'>Laimid</a></td>
+                                <td>262.44</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=487758'
+                                        data-toggle='tooltip' title='Naturat'>mustolini</a></td>
+                                <td>390.21</td>
+                            </tr>
+                            <tr class=''>
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=494106'
+                                        data-toggle='tooltip' title='Danubia'>Anastasia Gheorghiu</a></td>
+                                <td>230.53</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=494262'
+                                        data-toggle='tooltip' title='Harikapia'>Erika van Turnhout</a></td>
+                                <td>282.15</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=495130'
+                                        data-toggle='tooltip' title='The British Imperium'>Henry VII</a></td>
+                                <td>963.87</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=495188'
+                                        data-toggle='tooltip' title='Empire of South Dalia'>Caio Martins</a></td>
+                                <td>1,476.60</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=498235'
+                                        data-toggle='tooltip' title='Egyp'>RedSlayerGuy</a></td>
+                                <td>222.16</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=501998'
+                                        data-toggle='tooltip' title='Exogiin'>Nemnux</a></td>
+                                <td>207.16</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=510662'
+                                        data-toggle='tooltip' title='Buddydi'>Dani</a></td>
+                                <td>370.94</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=512021'
+                                        data-toggle='tooltip' title='Sovient union'>JosephVStalin</a></td>
+                                <td>685.00</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=512801'
+                                        data-toggle='tooltip' title='The Great South Africans'>Nelson Mandela</a></td>
+                                <td>188.82</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=515806'
+                                        data-toggle='tooltip' title='Lithiamia'>Srdjan</a></td>
+                                <td>252.68</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=516544'
+                                        data-toggle='tooltip' title='Ballisk'>Alexander Swartznigg</a></td>
+                                <td>370.21</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=516797'
+                                        data-toggle='tooltip' title='United countys of Connaught'>Medhbh</a></td>
+                                <td>229.84</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=516816'
+                                        data-toggle='tooltip' title='Jadeovia'>Jade Evren</a></td>
+                                <td>280.50</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=520314'
+                                        data-toggle='tooltip' title='Tospela'>Zaraz</a></td>
+                                <td>184.80</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=520574'
+                                        data-toggle='tooltip' title='USOC'>Benjamin Griggs</a></td>
+                                <td>195.27</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=521174'
+                                        data-toggle='tooltip' title='Sonar Bangla'>Shubhajit Adhikary</a></td>
+                                <td>168.65</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=521328'
+                                        data-toggle='tooltip' title='United opps'>Opps</a></td>
+                                <td>53.90</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=521332'
+                                        data-toggle='tooltip' title='Garfeild'>opp</a></td>
+                                <td>42.65</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=521878'
+                                        data-toggle='tooltip' title='Obamas home'>Vladimir bidengrad</a></td>
+                                <td>304.15</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=523121'
+                                        data-toggle='tooltip' title='The Authority of Rogue'>Khalid Bolkour</a></td>
+                                <td>110.10</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=524740'
+                                        data-toggle='tooltip' title='Nihonia'>Nihon</a></td>
+                                <td>273.70</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=525876'
+                                        data-toggle='tooltip' title='GSSR'>Gourav</a></td>
+                                <td>103.93</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=425285'
+                                        data-toggle='tooltip' title='ADreamland'>Adys</a></td>
+                                <td>223.20</td>
+                            </tr>
+                            <tr class='hiddenapprow' style="display:none;">
+                                <td class='notranslate'><a href='https://politicsandwar.com/nation/id=527600'
+                                        data-toggle='tooltip' title='Republic Of Skyland'>Beanman</a></td>
+                                <td>127.09</td>
+                            </tr>
+                            <tr>
+                                <td colspan='2' style='text-align:center;'><span id='changebutton'><button
+                                            id='showextrapps' data-toggle='tooltip' title='Display/Hide Applicants'>Show
+                                            More/Less</button></span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <table class="nationtable word-wrapping" style="float:right;">
+                            <tr>
+                                <th colspan="4">Alliance Activity</th>
+                            </tr>
+                            <tr height="200px">
+                                <td colspan="4" style="padding-top: 5px; overflow: auto; height: 200px;">
+                                    <div style='height:200px; overflow: auto;'>
+                                        <table class='nationtable' style='margin: 0; width: 100%; border:none;'>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    07:02 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    06:39 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=315015'>SeedHunter</a>
+                                                    changed <a
+                                                        href='https://politicsandwar.com/nation/id=527900'>Earija</a>'s
+                                                    alliance permissions to Member.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    06:05 pm - <a
+                                                        href='https://politicsandwar.com//nation/id=527900'>Earija</a>
+                                                    applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    05:34 pm - <a
+                                                        href='https://politicsandwar.com//nation/id=517933'>Bluxtanked</a>
+                                                    left the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    05:21 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=315015'>SeedHunter</a>
+                                                    changed <a
+                                                        href='https://politicsandwar.com/nation/id=527911'>Kochang</a>'s
+                                                    alliance permissions to Member.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    03:59 pm - <a
+                                                        href='https://politicsandwar.com//nation/id=527911'>Kochang</a>
+                                                    applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    02:20 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=189573'>Danzek</a>
+                                                    sent the alliance funds from the bank of <a
+                                                        href='https://politicsandwar.com/alliance/id=11127'>DecanomicsRocks</a>.
+                                                    </td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    02:19 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    01:58 pm - <a href='/nation/id=239259'>Christian III</a> moved <a
+                                                        href='/nation/id=216220'>freeland republic</a> to tax bracket
+                                                    (#17160).</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    01:58 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/03
+                                                    11:42 am - <a href='/nation/id=315015'>SeedHunter</a> removed <a
+                                                        href='/nation/id=524740'>Nihon</a> from the alliance and set
+                                                    them as an applicant. They previously had the position: Member.</td<
+                                                        /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/02
+                                                    01:20 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/02
+                                                    01:14 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/02
+                                                    11:13 am - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/02
+                                                    03:36 am - <a
+                                                        href='https://politicsandwar.com//nation/id=527600'>Republic Of
+                                                        Skyland</a> applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/01
+                                                    06:34 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=189573'>Danzek</a>
+                                                    sent the alliance funds from the bank of <a
+                                                        href='https://politicsandwar.com/alliance/id=11127'>DecanomicsRocks</a>.
+                                                    </td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/01
+                                                    06:33 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/01
+                                                    07:47 am - <a
+                                                        href='https://politicsandwar.com//nation/id=525876'>GSSR</a>
+                                                    applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/01
+                                                    03:41 am - <a
+                                                        href='https://politicsandwar.com//nation/id=425285'>ADreamland</a>
+                                                    applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>03/01
+                                                    03:01 am - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    07:18 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    03:17 pm - <a href='/nation/id=239259'>Christian III</a> moved <a
+                                                        href='/nation/id=517192'>Menland</a> to tax bracket (#19040).
+                                                    </td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    03:17 pm - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    11:39 am - <a
+                                                        href='https://politicsandwar.com/nation/id=189573'>Danzek</a>
+                                                    sent the alliance funds from the bank of <a
+                                                        href='https://politicsandwar.com/alliance/id=11127'>DecanomicsRocks</a>.
+                                                    </td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    11:36 am - <a href='/nation/id=239259'>Christian III</a> moved <a
+                                                        href='/nation/id=521315'>Kingdom of the franks</a> to tax
+                                                    bracket (#17160).</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/27
+                                                    11:36 am - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/26
+                                                    12:15 pm - <a
+                                                        href='https://politicsandwar.com//nation/id=512801'>The Great
+                                                        South Africans</a> applied to join the alliance <a
+                                                        href='https://politicsandwar.com//alliance/id=10075'>The New
+                                                        Sanghelios</a>.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/26
+                                                    09:28 am - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/26
+                                                    08:43 am - <a
+                                                        href='https://politicsandwar.com/nation/id=189573'>Danzek</a>
+                                                    sent the alliance funds from the bank of <a
+                                                        href='https://politicsandwar.com/alliance/id=11127'>DecanomicsRocks</a>.
+                                                    </td< /tr>
+                                            <tr style='border:none;'>
+                                                <td style='border:none;'><img
+                                                        src='https://politicsandwar.com/img/icons/16/bullet_blue.png'>02/26
+                                                    08:37 am - <a
+                                                        href='https://politicsandwar.com/nation/id=239259'>Christian
+                                                        III</a> made a withdrawal from the alliance bank.</td< /tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="4">Alliance Score Over Time</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="padding:0;">
+                                    <div id="alliance_score_graph" style="margin:0;max-height:360px;"></div>
+                                </td>
+                            </tr>
+
+                            <script type="text/javascript">
+                                score_graph_dates = ["2022-06-16", "2022-06-19", "2022-06-26", "2022-07-03", "2022-07-10", "2022-07-17", "2022-07-24", "2022-07-31", "2022-08-07", "2022-08-14", "2022-08-21", "2022-08-28", "2022-09-04", "2022-09-11", "2022-09-18", "2022-09-25", "2022-10-02", "2022-10-09", "2022-10-16", "2022-10-23", "2022-10-30", "2022-11-06", "2022-11-13", "2022-11-20", "2022-11-27", "2022-12-04", "2022-12-11", "2022-12-18", "2022-12-25", "2023-01-01", "2023-01-08", "2023-01-15", "2023-01-22", "2023-01-29", "2023-02-01", "2023-02-02", "2023-02-03", "2023-02-04", "2023-02-05", "2023-02-06", "2023-02-07", "2023-02-08", "2023-02-09", "2023-02-10", "2023-02-11", "2023-02-12", "2023-02-13", "2023-02-14", "2023-02-15", "2023-02-16", "2023-02-17", "2023-02-18", "2023-02-19", "2023-02-20", "2023-02-21", "2023-02-22", "2023-02-23", "2023-02-24", "2023-02-25", "2023-02-26", "2023-02-27", "2023-02-28", "2023-03-01", "2023-03-02", "2023-03-03"];
+                                score_graph_scores = [17866.766667, 20335.014286, 22075.602857, 25016.017143, 29407.965714, 30651.518571, 30042.447143, 29996.567143, 30223.531429, 30212.631429, 31733.435714, 35614.031429, 31633.055714, 32407.127143, 34759.497143, 34918.754286, 34546.532857, 34436.804286, 34985.624286, 33752.868571, 34030.171429, 36245.967143, 40194.220000, 45394.371429, 46518.077143, 46624.564286, 43340.677143, 41297.031429, 45419.191429, 43356.588571, 40165.940000, 42414.694286, 46142.854286, 49698.110000, 51812.680000, 52103.240000, 51917.650000, 56256.250000, 56513.860000, 56553.620000, 56026.880000, 55954.390000, 56036.650000, 57782.440000, 55177.770000, 55615.170000, 55530.970000, 53798.340000, 53473.210000, 53942.600000, 54149.340000, 53479.300000, 53479.700000, 53753.640000, 53941.440000, 53985.360000, 54187.080000, 54937.850000, 54579.190000, 54755.340000, 55956.350000, 55998.180000, 56355.250000, 54857.410000, 55156.950000];
+
+                                var score_graph_trace = {
+                                    type: "scatter",
+                                    mode: "lines",
+                                    name: "Score",
+                                    x: score_graph_dates,
+                                    y: score_graph_scores,
+                                    line: { color: '#282883', opacity: 0.9 }
+                                };
+
+                                var score_graph_data = [score_graph_trace];
+                                var score_graph_layout = {
+                                    title: 'Alliance Score Over Time',
+                                    xaxis: { title: "Date" },
+                                    yaxis: { title: "Alliance Score" }
+                                };
+
+                                Plotly.newPlot('alliance_score_graph', score_graph_data, score_graph_layout);
+                            </script>
+                            <tr>
+                                <th colspan="4">Member City Distribution</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="padding:0;">
+                                    <div id="alliance_member_histogram" style="margin:0;max-height:360px;"></div>
+                                </td>
+                            </tr>
+
+
+                            <script type="text/javascript">
+                                non_vm_nations_order = [1, 3, 4, 5, 10, 12, 14, 15, 20, 22, 23, 24, 25, 27];
+                                non_vm_nations_scores = [1, 4, 2, 1, 5, 2, 1, 1, 2, 1, 1, 2, 2, 1];
+                                var member_histogram_trace = {
+                                    x: non_vm_nations_order,
+                                    y: non_vm_nations_scores,
+                                    type: 'bar',
+                                    marker: {
+                                        color: '#282883',
+                                        opacity: 0.9
+                                    }
+                                };
+                                var member_histogram_data = [member_histogram_trace];
+                                var member_histogram_layout = {
+                                    title: 'Member City Distribution',
+                                    xaxis: { title: "Cities" },
+                                    yaxis: { title: "Count" }
+                                };
+                                Plotly.newPlot('alliance_member_histogram', member_histogram_data, member_histogram_layout);
+                            </script>
+
+                            <script type="text/javascript" src="https://politicsandwar.com/js/vis.min2.js"></script>
+                            <script type="text/javascript">
+                                var linkElement = document.createElement("link");
+                                linkElement.rel = "stylesheet";
+                                linkElement.href = "https://politicsandwar.com/css/vis.min.britannia.css"; //Replace here
+
+                                document.head.appendChild(linkElement);
+                            </script>
+
+                            <tr>
+                                <th colspan="4">Treaties</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="background:#FFF;">
+                                    <div id="treatyWeb" style="width:100%; height:250px;"></div>
+                                </td>
+                            </tr>
+                            <tr class="center notranslate">
+                                <th>Type</th>
+                                <th colspan="2">Alliance</th>
+                                <th>Text</th>
+                            </tr>
+                            <tr class='center notranslate'>
+                                <td>Protectorate</td>
+                                <td colspan='2'><a href='/alliance/id=5049'><img
+                                            src='https://politicsandwar.com/uploads/7af90e0e909a869bc5c0d2ea92a90cc0a7af7994500x281822.png'
+                                            class='tinyflag'> Carthago</a></td>
+                                <td>N/A</td>
+                            </tr>
+                        </table>
+
+                        <script type="text/javascript">
+                            // create an array with nodes
+                            var nodes = new vis.DataSet([
+                                { id: 10075, label: 'The New Sanghelios', image: 'https://politicsandwar.com/uploads/d28226cb08d43a13c0f181a8ebaf4c628a6dba8b500x330112.png', title: 'The New Sanghelios', size: '25', url: '/alliance/id=10075' }, { id: 5049, label: 'Carthago', image: 'https://politicsandwar.com/uploads/7af90e0e909a869bc5c0d2ea92a90cc0a7af7994500x281822.png', title: 'Carthago', size: '15', url: '/alliance/id=5049' }]);
+
+                            // create an array with edges
+                            var edges = new vis.DataSet([
+                                { 'from': 5049, 'to': 10075, 'color': '#65c765', 'length': 100, 'title': 'Protectorate', 'arrows': 'to' }]);
+
+                            // create a network
+                            var container = document.getElementById('treatyWeb');
+                            var data = {
+                                nodes: nodes,
+                                edges: edges
+                            };
+                            var options = {
+                                height: '100%',
+                                width: '100%',
+                                nodes: {
+                                    shape: "image"
+                                },
+                                edges: {
+                                    width: 2
+                                },
+                                physics: {
+                                    solver: "forceAtlas2Based"
+                                }
+                            };
+                            var network = new vis.Network(container, data, options);
+
+                            network.on("selectNode", function (params) {
+                                if (params.nodes.length === 1) {
+                                    var node = nodes.get(params.nodes[0]);
+                                    window.open(node.url, '_blank');
+                                }
+                            });
+                        </script> <!-- </table> is in alliance_page_treaties.php -->
+                    </div>
+                    <!-- for mobile view -->
+
+                </div>
+
+                <link href="https://politicsandwar.com/nvd3/build/nv.d3.min.css" rel="stylesheet" type="text/css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"
+                    type="text/javascript"></script>
+                <script src="https://politicsandwar.com/nvd3/build/nv.d3.min.js" type="text/javascript"></script>
+                <script src="https://politicsandwar.com/nvd3/src/tooltip.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                    $("#showextrapps").click(function () {
+                        $(".hiddenapprow").slideToggle();
+                    });
+                </script>
+                <script src="https://politicsandwar.com/js/ckeditor.js" type="text/javascript"></script>
+                <script src="https://politicsandwar.com/js/ckeditor-config.js" type="text/javascript"></script>
+            </div>
+
+            <style>
+                @media (max-width : 1200px) {
+                    #logo {
+                        margin-top: 70px;
+                    }
+                }
+            </style>
+            <div class="container infobarcontainer notranslate hidden-xs hidden-sm" id="rssBar">
+                <div class="row" style="z-index: 2;">
+
+                    <div class="informationbar col-xs-12">
+
+                        <span style="float:right;">
+                            <!--Credits-->
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=credits&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                <img src="https://politicsandwar.com/img/icons/16/point_gold.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Credits" style="width:16px; height:16px;"></a>
+                            0
+                            <!--Coal-->
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=coal&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                <img src="https://politicsandwar.com/img/resources/coal.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Coal" style="width:16px; height:16px;"></a>
+                            0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=oil&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/oil.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Oil" style="width:16px; height:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=uranium&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/uranium.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Uranium" style="width:16px; height:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=lead&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/lead.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Lead" style="width:16px; height:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=iron&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/iron.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Iron" style="width:16px; height:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=bauxite&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/bauxite.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Bauxite" style="height:16px; width:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=gasoline&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/gasoline.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Gasoline" style="height:16px; width:16px;"></a>
+                            0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=munitions&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/munitions.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Munitions" style="width:16px; height:16px;"></a>
+                            0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=steel&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/steel.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Steel" style="width:16px; height:16px;"></a> 0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=aluminum&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/resources/aluminum.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Aluminum" style="width:16px; height:16px;"></a>
+                            0.00
+                            <a
+                                href="https://politicsandwar.com/index.php?id=90&display=world&resource1=food&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go"><img
+                                    src="https://politicsandwar.com/img/icons/16/steak_meat.png" data-toggle="tooltip"
+                                    data-placement="bottom" title="Food"></a> 0.00
+                            <a href="https://politicsandwar.com/nation/revenue/"><b style="color: #28d020;"
+                                    data-toggle="tooltip" data-placement="bottom" title="Money">$</b></a> 0.00
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="resource-column">
+
+                <div class="modal-content notranslate">
+
+                    <div class="modal-dialog modal-sm" role="document">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <span style="font-size: 18px;" class="bold">Resources</span>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <style>
+                                .resource-table {
+                                    width: 100%;
+                                }
+
+                                .resource-table tr {
+                                    margin-bottom: 5px;
+                                    border-bottom: 1px solid #E5E5E5;
+                                    border-collapse: collapse;
+                                }
+
+                                .resource-table td {
+                                    padding-bottom: 5px;
+                                }
+                            </style>
+                            <table class="resource-table">
+                                <tr>
+                                    <td>
+                                        <a href="https://politicsandwar.com/nation/revenue/">
+                                            <span class="icon"><b style="color: #28d020;" data-toggle="tooltip"
+                                                    data-placement="bottom" title="Money">$</b></span>
+                                            Money:
+                                        </a>
+                                    </td>
+                                    <td class="right">19,284,931.31</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=food&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/icons/16/steak_meat.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Food"></span>
+                                            Food:
+                                        </a>
+                                    </td>
+                                    <td class="right">18,101.85</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=coal&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/coal.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Coal"
+                                                    style="width:16px; height:16px;"></span>
+                                            Coal:
+                                        </a>
+                                    </td>
+                                    <td class="right">1,907.40</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=oil&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/oil.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Oil"
+                                                    style="width:16px; height:16px;"></span>
+                                            Oil:
+                                        </a>
+                                    </td>
+                                    <td class="right">8,155.50</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=uranium&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/uranium.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Uranium"
+                                                    style="width:16px; height:16px;"></span>
+                                            Uranium:
+                                        </a>
+                                    </td>
+                                    <td class="right">149.60</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=lead&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/lead.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Lead"
+                                                    style="width:16px; height:16px;"></span>
+                                            Lead:
+                                        </a>
+                                    </td>
+                                    <td class="right">0.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=iron&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/iron.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Iron"
+                                                    style="width:16px; height:16px;"></span>
+                                            Iron:
+                                        </a>
+                                    </td>
+                                    <td class="right">1,907.40</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=bauxite&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/bauxite.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Bauxite"
+                                                    style="width:16px; height:16px;"></span>
+                                            Bauxite:
+                                        </a>
+                                    </td>
+                                    <td class="right">116.83</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=gasoline&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/gasoline.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Gasoline"
+                                                    style="width:16px; height:16px;"></span>
+                                            Gasoline:
+                                        </a>
+                                    </td>
+                                    <td class="right">1,567.50</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=munitions&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/munitions.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Munitions"
+                                                    style="width:16px; height:16px;"></span>
+                                            Munitions:
+                                        </a>
+                                    </td>
+                                    <td class="right">596.11</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=steel&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/steel.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Steel"
+                                                    style="width:16px; height:16px;"></span>
+                                            Steel:
+                                        </a>
+                                    </td>
+                                    <td class="right">15.35</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=aluminum&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/resources/aluminum.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Aluminum"
+                                                    style="width:16px; height:16px;"></span>
+                                            Aluminum:
+                                        </a>
+                                    </td>
+                                    <td class="right">5,571.35</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a
+                                            href="https://politicsandwar.com/index.php?id=90&display=world&resource1=credits&buysell=sell&ob=price&od=DEF&maximum=50&minimum=0&search=Go">
+                                            <span class="icon"><img
+                                                    src="https://politicsandwar.com/img/icons/16/point_gold.png"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Credits"
+                                                    style="width:16px; height:16px;"></span>
+                                            Credits:
+                                        </a>
+                                    </td>
+                                    <td class="right">0</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="row" style="padding-top:40px;">
+                <div class="col-xs-12 col-md-4">
+                    <p class="notranslate">&copy; <a href="https://yellowstonedigitalmedia.com/"
+                            target="_blank">Yellowstone Digital Media LLC</a> 2014-2023</p>
+                    <p><a href="https://politicsandwar.com/terms/">Terms and Conditions</a></p>
+                    <p><a href="https://politicsandwar.com/rules/">Game Rules</a></p>
+                    <p><a href="https://politicsandwar.com/privacy/">Privacy Policy</a></p>
+                    <p class="small">Server Execution Time: 0.866s</p>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <p class="notranslate"><a href="https://discord.gg/H9XnGxc" target="_blank">Discord</a></p>
+                    <p class="notranslate"><a href="https://forum.politicsandwar.com/" target="_blank">Forum</a></p>
+                    <p class="notranslate"><a href="https://politicsandwar.fandom.com/wiki/Politics_and_War_Wiki"
+                            target="_blank">Wiki</a></p>
+                    <p><a href="https://politicsandwar.com/donate/" target="_blank">Donate</a></p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="language_widget">
+                        <p class="bold"><span class="notranslate">Select Language /</span> Select Language</p>
+
+                        <!-- GTranslate: https://gtranslate.io/ -->
+                        <a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|en');return false;"
+                            title="English" class="gflag nturl" style="background-position:-0px -0px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="English" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|zh-TW');return false;"
+                            title="Chinese (Traditional)" class="gflag nturl" style="background-position:-400px -0px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Chinese (Traditional)" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|da');return false;"
+                            title="Danish" class="gflag nturl" style="background-position:-700px -0px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Danish" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|nl');return false;"
+                            title="Dutch" class="gflag nturl" style="background-position:-0px -100px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Dutch" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|fr');return false;"
+                            title="French" class="gflag nturl" style="background-position:-200px -100px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="French" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|de');return false;"
+                            title="German" class="gflag nturl" style="background-position:-300px -100px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="German" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|hi');return false;"
+                            title="Hindi" class="gflag nturl" style="background-position:-500px -100px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Hindi" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|it');return false;"
+                            title="Italian" class="gflag nturl" style="background-position:-600px -100px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Italian" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|no');return false;"
+                            title="Norwegian" class="gflag nturl" style="background-position:-100px -200px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Norwegian" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|pt');return false;"
+                            title="Portuguese" class="gflag nturl" style="background-position:-300px -200px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Portuguese" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|ru');return false;"
+                            title="Russian" class="gflag nturl" style="background-position:-500px -200px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Russian" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|es');return false;"
+                            title="Spanish" class="gflag nturl" style="background-position:-600px -200px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Spanish" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|tl');return false;"
+                            title="Filipino" class="gflag nturl" style="background-position:-100px -300px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Filipino" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|bn');return false;"
+                            title="Bengali" class="gflag nturl" style="background-position:-200px -700px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Bengali" /></a><a href="#"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; doGTranslate('en|jw');return false;"
+                            title="Javanese" class="gflag nturl" style="background-position:-200px -800px;"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-=""><img src="//gtranslate.net/flags/blank.png"
+                                height="24" width="24" alt="Javanese" /></a>
+
+                        <style type="text/css">
+                            <!--
+                            a.gflag {
+                                vertical-align: middle;
+                                font-size: 24px;
+                                padding: 1px 0;
+                                background-repeat: no-repeat;
+                                background-image: url(//gtranslate.net/flags/24.png);
+                            }
+
+                            a.gflag img {
+                                border: 0;
+                            }
+
+                            a.gflag:hover {
+                                background-image: url(//gtranslate.net/flags/24a.png);
+                            }
+                            -->
+                        </style>
+
+                        <br /><select onchange="if (!window.__cfRLUnblockHandlers) return false; doGTranslate(this);"
+                            data-cf-modified-95d84514c0e17c93ee2bc8a2-="">
+                            <option value="">Select Language</option>
+                            <option value="en|en">English</option>
+                            <option value="en|ar">Arabic</option>
+                            <option value="en|bg">Bulgarian</option>
+                            <option value="en|zh-CN">Chinese (Simplified)</option>
+                            <option value="en|zh-TW">Chinese (Traditional)</option>
+                            <option value="en|hr">Croatian</option>
+                            <option value="en|cs">Czech</option>
+                            <option value="en|da">Danish</option>
+                            <option value="en|nl">Dutch</option>
+                            <option value="en|fi">Finnish</option>
+                            <option value="en|fr">French</option>
+                            <option value="en|de">German</option>
+                            <option value="en|el">Greek</option>
+                            <option value="en|hi">Hindi</option>
+                            <option value="en|it">Italian</option>
+                            <option value="en|ja">Japanese</option>
+                            <option value="en|ko">Korean</option>
+                            <option value="en|no">Norwegian</option>
+                            <option value="en|pl">Polish</option>
+                            <option value="en|pt">Portuguese</option>
+                            <option value="en|ro">Romanian</option>
+                            <option value="en|ru">Russian</option>
+                            <option value="en|es">Spanish</option>
+                            <option value="en|sv">Swedish</option>
+                            <option value="en|tl">Filipino</option>
+                            <option value="en|iw">Hebrew</option>
+                            <option value="en|id">Indonesian</option>
+                            <option value="en|lv">Latvian</option>
+                            <option value="en|lt">Lithuanian</option>
+                            <option value="en|uk">Ukrainian</option>
+                            <option value="en|tr">Turkish</option>
+                            <option value="en|is">Icelandic</option>
+                            <option value="en|hy">Armenian</option>
+                            <option value="en|bn">Bengali</option>
+                            <option value="en|jw">Javanese</option>
+                            <option value="en|ne">Nepali</option>
+                            <option value="en|pa">Punjabi</option>
+                            <option value="en|eo">Esperanto</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--End Footer-->
+
+        </div>
+
+        <script src="https://politicsandwar.com/js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $('.panel-collapse').on('show.bs.collapse', function () {
+                $(this).siblings('.panel-heading').addClass('active');
+            });
+            $('.panel-collapse').on('hide.bs.collapse', function () {
+                $(this).siblings('.panel-heading').removeClass('active');
+            });
+        </script>
+
+        <script type="text/javascript">
+            $("#burgermenutoggle").click(function () {
+                $("#leftcolumn").slideToggle();
+                $("#rightcolumn").slideToggle();
+            });
+        </script>
+</body>
+
+</html>
